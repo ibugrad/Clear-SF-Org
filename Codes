@@ -1,0 +1,12 @@
+public static void clearORG(){
+        List<Entitlement> enList =[SELECT id FROM Entitlement];
+        delete enList;
+        List<Case> cList = [SELECT id FROM Case];
+        delete cList;
+        List<Opportunity> oppList = [SELECT id FROM Opportunity];
+        delete oppList;
+        List<Contact> conList = [SELECT id FROM Contact];
+        delete conList;
+        List<Account> acList = [SELECT id FROM Account];
+        delete acList;
+    }
