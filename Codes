@@ -1,4 +1,4 @@
-public static void clearORG(){
+apublic static void clearORG(){
         List<Entitlement> enList =[SELECT id FROM Entitlement];
         delete enList;
         List<Case> cList = [SELECT id FROM Case];
